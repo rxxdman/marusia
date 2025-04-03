@@ -1,0 +1,41 @@
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-width: 1440px;
+    padding: 16px 20px 24px;
+    box-sizing: border-box;
+    width: 100vw;
+}
+
+@media (max-width: 375px) {
+    #root {
+      width: 100%;
+      max-width: none;
+    }
+  }
+
+@media (min-width: 770px) {
+   
+}
+
+@media (min-width: 990px) {
+    #root{
+      padding: 16px 80px 24px;
+    }
+}
+
+@media (min-width: 1400px) {
+  
+}
+
+
+.active{
+    border-bottom: 1.5px solid rgba(220, 93, 252, 1)
+}
+
+.container{
+    flex: 1 0 auto;
+    width: 100%;
+}
+

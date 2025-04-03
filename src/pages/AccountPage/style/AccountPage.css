@@ -1,0 +1,52 @@
+.account {
+  max-width: 100%;
+  position: relative;
+}
+.account__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 40px;
+}
+.account__menu {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+.account__menu-button {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  color: rgb(255, 255, 255);
+  background: transparent;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: 0 center;
+  background-size: 24px;
+  padding: 8px 0 8px 32px;
+}
+.account__menu-active {
+  border-bottom: 1.5px solid rgb(220, 93, 252);
+}
+
+@media (min-width: 990px) {
+  .account__title {
+    font-size: 48px;
+    line-height: 56px;
+    margin-bottom: 64px;
+  }
+  .account__menu {
+    display: flex;
+    justify-content: flex-start;
+    gap: 64px;
+    margin-bottom: 64px;
+  }
+  .account__menu-button {
+    padding: 8px 0 8px 32px;
+  }
+  .account__menu-active {
+    border-bottom: 1.5px solid rgb(220, 93, 252);
+  }
+}/*# sourceMappingURL=AccountPage.css.map */

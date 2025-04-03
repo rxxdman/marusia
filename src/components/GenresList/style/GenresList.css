@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+
+.genres__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  gap: 24px;
+}
+.genres__list-element {
+  height: 304px;
+  width: calc(25% - 18px);
+  transition: box-shadow 0.2s ease-in-out;
+}
+.genres__list-element-link {
+  height: 100%;
+  width: 100%;
+  border-radius: 24px;
+}
+.genres__list-element-link .genresCard {
+  height: 100%;
+  width: 100%;
+  outline: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 24px;
+  box-shadow: 0px 0px 30px 0px rgba(255, 255, 255, 0.33);
+  position: relative;
+  transition: box-shadow 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-size: cover;
+}
+.genres__list-element-link .genresCard__title {
+  color: white;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+  margin: 0;
+  padding: 20px 0 30px 0;
+  background-color: black;
+}
+.genres__list-element-link .genresCard:hover {
+  box-shadow: 0px 0px 160px 0px rgba(255, 255, 255, 0.33);
+}
+
+@media (max-width: 769px) {
+  .genres__list {
+    gap: 16px;
+  }
+  .genres__list-element {
+    height: 200px;
+    width: 100%;
+  }
+}
+@media (min-width: 770px) and (max-width: 989px) {
+  .genres__list {
+    gap: 24px;
+  }
+  .genres__list-element {
+    height: 250px;
+    width: calc(50% - 12px);
+  }
+}
+@media (min-width: 990px) {
+  .genres__list {
+    gap: 24px;
+  }
+  .genres__list-element {
+    width: calc(25% - 18px);
+  }
+}/*# sourceMappingURL=GenresList.css.map */

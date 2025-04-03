@@ -1,0 +1,160 @@
+
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px white inset !important; /* Замените 'white' на цвет фона вашей формы */
+  box-shadow: 0 0 0 30px white inset !important; /* Замените 'white' на цвет фона вашей формы */
+  background-color: transparent !important; /* Устанавливаем прозрачный фон */
+}
+
+.auth__modal {
+  position: relative;
+
+  &-closeBtn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    border: none;
+
+    padding: 24px;
+    border-radius: 24px;
+
+    background-image: url(../../../assets/trailerPlayer/close_sm.svg);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    transition: background-color .3s ease-in-out;
+  }
+
+  &-closeBtn:hover {
+    background-color: gray;
+  }
+}
+
+.auth-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 295px;
+
+  gap: 12px;
+  border-radius: 24px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+  background-color: white;
+
+  padding: 125.5px 20px 32px 20px;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background-image: url(../../../assets/header/logo-black.svg);
+  background-repeat: no-repeat;
+  background-size: 132.13px 29.5px;
+  background-position: center 64px;
+
+  &__title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    color: rgba(0, 0, 0, 1);
+  }
+
+  &__messageBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    &-text {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 24px;
+      text-align: center;
+    }
+  }
+
+  &__context {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    gap: 16px;
+
+    &-input {
+      padding: 16px 16px 16px 52px;
+      border: 1px solid rgba(0, 0, 0, 0.4);
+      border-radius: 8px;
+
+      background-repeat: no-repeat;
+      background-position: 16px center;
+      outline: none;
+
+    }
+
+    &-input-error {
+      border: 1px solid rgba(255, 117, 117, 1);
+    }
+
+    margin-bottom: 24px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  &__button {
+    padding: 0;
+    background: none;
+    outline: none;
+    border: 0;
+    border-radius: 0;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 1);
+  }
+
+  &__button:hover {
+    color: rgba(0, 0, 0, 0.7);
+  }
+
+}
+
+@media (min-width: 770px) {
+   
+}
+
+@media (min-width: 990px) {
+
+    .auth__modal{
+      &-closeBtn{
+        top: 0;
+        right: -72px;
+
+        padding: 24px;
+
+        background-image: url(../../../assets/trailerPlayer/close_big.svg);
+        background-color: rgba(255, 255, 255, 1);
+        
+      }
+    }
+
+    .auth-form{
+      width: 420px;
+      padding: 133.5px 40px 64px 40px;
+    }
+}
+
+@media (min-width: 1400px) {
+  
+}
+

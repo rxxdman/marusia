@@ -1,0 +1,30 @@
+
+
+.page__title{
+    color: white;
+    margin-top: 16px;
+    margin-bottom: 40px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+@media (min-width: 770px) {
+   
+}
+
+@media (min-width: 990px) {
+    
+.page__title{
+    color: white;
+    margin-top: 32px;
+    margin-bottom: 64px;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+}
+}
+
+@media (min-width: 1400px) {
+  
+}

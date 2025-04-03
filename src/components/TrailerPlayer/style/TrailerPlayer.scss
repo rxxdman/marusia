@@ -1,0 +1,177 @@
+.trailerModal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background: rgba(57, 59, 60, 1);
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+
+    &__btnClose {
+        position: absolute;
+
+        top: 16px;
+        right: 16px;
+
+        padding: 16px;
+        border-radius: 24px;
+        background-image: url(../../../assets/trailerPlayer/close_big.svg);
+        background-repeat: no-repeat;
+        background-position: 4px 4px;
+        z-index: 1000;
+
+        border: none;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+        .playerControl {
+
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 100;
+            opacity: 0;
+            transition: opacity .3s ease-in-out;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+
+            &__title {
+                padding: 24px 40px;
+
+                background-color: rgba(10, 11, 11, 0.5);
+
+                color: rgba(255, 255, 255, 1);
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 24px;
+            }
+
+            &__btnPlayPause {
+                position: absolute;
+                left: calc(50% - 32px);
+                top: calc(50% - 32px);
+                padding: 32px;
+                border-radius: 40px;
+
+                background-repeat: no-repeat;
+                background-size: 24px;
+                background-position: 20px 20px;
+            }
+        }
+    }
+}
+
+@media only screen and (orientation: portrait) and (min-device-width: 320px) {
+
+    .trailerModal {
+        margin-top: 50%;
+        height: 50%;
+
+        &__btnClose {
+            top: calc(15%);
+        }
+
+        .playerControl {
+
+            &__title {
+                position: absolute;
+                width: 100%;
+                bottom: -96px;
+            }
+        }
+    }
+}
+
+
+@media (min-width: 770px) {}
+
+@media (min-width: 990px) {
+
+    .trailerModal {
+        width: 960px;
+        height: 540px;
+        margin-top: 10%;
+        background: rgba(57, 59, 60, 1);
+
+        &__btnClose {
+            right: -72px;
+
+            padding: 24px;
+            background-position: 12px 12px;
+        }
+
+        &__content {
+
+            .playerControl {
+
+                &__btnPlayPause {
+                    left: calc(50% - 40px);
+                    top: calc(50% - 40px);
+                    padding: 40px;
+
+                    background-size: 40px;
+                    background-position: 20px 20px;
+                }
+
+                &__title {
+                    font-size: 24px;
+                    line-height: 32px;
+                    margin: none;
+                }
+            }
+        }
+    }
+
+    .overlay {
+        background: rgba(10, 11, 11, 0.9);
+    }
+
+}
+
+@media (min-width: 1400px) {}
+
+button {
+    cursor: pointer;
+}
+
+.playerControl:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.opacity-mobile:hover {
+    opacity: 0;
+}
+
+.loading {
+    width: 50px;
+    height: 50px;
+    background-image: url(../../assets/trailerPlayer/loader.svg);
+    background-size: cover;
+    animation: spin 1s linear infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

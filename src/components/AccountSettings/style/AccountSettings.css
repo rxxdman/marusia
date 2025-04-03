@@ -1,0 +1,57 @@
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.settings__parametr {
+  margin-bottom: 40px;
+  display: flex;
+  gap: 16px;
+}
+.settings__parametr-ico {
+  width: 48px;
+  height: 48px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.5);
+  pointer-events: none;
+}
+.settings__parametr-textBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: rgb(255, 255, 255);
+}
+.settings__parametr-textBlock-title {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+.settings__parametr-textBlock-text {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+@media (min-width: 990px) {
+  .settings__parametr-ico {
+    width: 60px;
+    height: 60px;
+  }
+  .settings__parametr-textBlock-title {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .settings__parametr-textBlock-text {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+  }
+}/*# sourceMappingURL=AccountSettings.css.map */

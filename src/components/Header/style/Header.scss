@@ -1,0 +1,91 @@
+.header {
+    display: flex;
+    align-items: center;
+    height: 32px;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 8px;
+
+    &__logo {
+        height: 18px;
+    }
+
+    &__section {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        &-link {
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 32px;
+            color: #fff;
+            transition: border .6s ease-in-out;
+        }
+    }
+
+    .modalSearch {
+        padding: 16px 20px 16px;
+    }
+
+    .ReactModal__Overlay {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+}
+
+// Мобильные устройства
+@media (max-width: 769px) {
+    .header {
+        height: 32px; // Оставляем высоту для мобильных
+        margin-bottom: 8px; // Отступ снизу
+
+        &__logo {
+            height: 18px; // Высота логотипа
+        }
+
+        &__section {
+            gap: 10px; // Уменьшаем промежуток между элементами
+        }
+    }
+}
+
+// Планшеты
+@media (min-width: 770px) and (max-width: 989px) {
+    .header {
+        height: 40px; // Увеличиваем высоту для планшетов
+        margin-bottom: 16px; // Увеличиваем отступ снизу
+
+        &__logo {
+            height: 24px; // Увеличиваем высоту логотипа
+        }
+
+        &__section {
+            gap: 20px; // Оставляем промежуток между элементами
+        }
+    }
+}
+
+// Десктопы
+@media (min-width: 990px) {
+    .header {
+        display: flex;
+        align-items: center;
+        gap: 80px;
+
+        height: 48px;
+        padding: 24px 0;
+        margin-bottom: 32px;
+
+        &__logo {
+            height: 32px;
+        }
+
+        &__section {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            flex-basis: 100%;
+
+        }
+    }
+}

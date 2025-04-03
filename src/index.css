@@ -1,0 +1,53 @@
+
+@font-face {
+  font-family: "Play";
+  src: url("./fonts/Play-Bold.ttf") format("truetype"); 
+  font-style: normal; 
+  font-weight: 700; 
+} 
+
+@font-face {
+  font-family: "Play";
+  src: url("./fonts/Play-Regular.ttf") format("truetype"); 
+  font-style: normal; 
+  font-weight: 400; 
+} 
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+html {
+  display: flex;
+  justify-content: center;
+  font-family: "Play", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    linear-gradient(178.73deg, rgba(39, 135, 245, 0.18) -17.53%, rgba(163, 147, 245, 0.18) 131.74%),
+    linear-gradient(180deg, #000000 0%, rgba(39, 36, 36, 0.7) 100%);
+  background-repeat: no-repeat;
+  font-family: 'Play', 'Courier New', Courier, monospace;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: inherit;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
